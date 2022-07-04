@@ -1,4 +1,4 @@
-package br.com.maykon.reversetddprocessor.annotation;
+package br.com.maykon.reversetdd.core.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

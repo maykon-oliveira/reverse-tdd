@@ -1,6 +1,6 @@
-package br.com.maykon.reversetddprocessor;
+package br.com.maykon.reversetdd.usage;
 
-import br.com.maykon.reversetddprocessor.annotation.BuilderProperty;
+import br.com.maykon.reversetdd.core.annotation.BuilderProperty;
 
 public class Person {
   private int age;

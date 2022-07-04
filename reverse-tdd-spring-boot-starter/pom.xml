@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>reverse-tdd</artifactId>
@@ -9,20 +9,30 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>reverse-tdd-usage</artifactId>
+    <artifactId>reverse-tdd-spring-boot-starter</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <spring-boot-starter.version>2.6.3</spring-boot-starter.version>
         <reverse-tdd.version>1.0-SNAPSHOT</reverse-tdd.version>
     </properties>
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
             <groupId>br.com.maykon.reversetdd</groupId>
-            <artifactId>reverse-tdd-spring-boot-starter</artifactId>
+            <artifactId>core</artifactId>
+            <version>${reverse-tdd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>br.com.maykon.reversetdd</groupId>
+            <artifactId>reverse-tdd-spring-boot-autoconfigure</artifactId>
             <version>${reverse-tdd.version}</version>
         </dependency>
     </dependencies>
-
 </project>

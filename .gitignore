@@ -1,3 +1,5 @@
 /reverse-tdd-usage/target/
-/reverse-tdd-processor/target/
+/core/target/
 /.idea/
+/reverse-tdd-spring-boot-starter/target/
+/reverse-tdd-spring-boot-autoconfigure/target/

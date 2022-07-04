@@ -1,4 +1,4 @@
-package br.com.maykon.reversetddprocessor.processor;
+package br.com.maykon.reversetdd.core.processor;
 
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.*;
@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@SupportedAnnotationTypes("br.com.maykon.reversetddprocessor.annotation.BuilderProperty")
+@SupportedAnnotationTypes("br.com.maykon.reversetdd.core.annotation.BuilderProperty")
 @SupportedSourceVersion(SourceVersion.RELEASE_11)
 @AutoService(Processor.class)
 public class BuilderProcessor extends AbstractProcessor {
