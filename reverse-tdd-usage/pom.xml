@@ -15,6 +15,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <reverse-tdd.version>1.0-SNAPSHOT</reverse-tdd.version>
+        <junit-jupiter.version>5.8.2</junit-jupiter.version>
+        <spring-boot-starter.version>2.6.3</spring-boot-starter.version>
     </properties>
 
     <dependencies>
@@ -22,6 +24,18 @@
             <groupId>br.com.maykon.reversetdd</groupId>
             <artifactId>reverse-tdd-spring-boot-starter</artifactId>
             <version>${reverse-tdd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>${spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

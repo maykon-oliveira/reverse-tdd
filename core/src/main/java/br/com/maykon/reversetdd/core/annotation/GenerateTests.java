@@ -6,5 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
-@Retention(RetentionPolicy.SOURCE)
-public @interface BuilderProperty {}
+@Retention(RetentionPolicy.RUNTIME)
+public @interface GenerateTests {
+    boolean isDisabled() default false;
+}

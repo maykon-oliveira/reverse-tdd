@@ -17,6 +17,7 @@
         <auto-service.version>1.0.1</auto-service.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <javapoet.version>1.9.0</javapoet.version>
+        <spring-boot.version>2.6.3</spring-boot.version>
     </properties>
 
     <dependencies>
@@ -31,6 +32,12 @@
             <groupId>com.squareup</groupId>
             <artifactId>javapoet</artifactId>
             <version>${javapoet.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
 
